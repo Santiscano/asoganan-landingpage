@@ -1,19 +1,26 @@
-import React from 'react'
+import React from 'react';
+import '@/styles/hero.css';
 
 const Features = () => {
   return (
     <section className="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px] dark:bg-dark">
-      <div className="w-full sm:max-w-540 md:max-w-720 mx-auto px-4">
+      <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mb-12 mx-auto max-w-[485px] lg:mb-[70px] text-center">
-              <span className="mb-2 block text-lg font-semibold text-green-700">
+              <span className="mb-2 block text-lg font-semibold text-green-700"
+                data-aos='fade-up' data-aos-duration='700'
+              >
                 Features
               </span>
-              <h2 className="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
+              <h2 className="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]"
+                data-aos='fade-up' data-aos-duration='700' data-aos-delay='300'
+              >
                 Main Features Of Play
               </h2>
-              <p className="text-base text-secondary dark:text-dark-6">
+              <p className="text-base text-secondary dark:text-dark-6"
+                data-aos='fade-up' data-aos-duration='700' data-aos-delay='600'
+              >
                 There are many variations of passages of Lorem Ipsum available
                 but the majority have suffered alteration in some form.
               </p>
@@ -22,7 +29,9 @@ const Features = () => {
         </div>
         <div className="-mx-4 flex flex-wrap">
 
-          <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div className="w-full px-4 md:w-1/2 lg:w-1/4"
+            data-aos='fade-up' data-aos-duration='700' data-aos-delay='800'
+          >
             <div className="wow fadeInUp group mb-12" data-wow-delay=".1s">
               <div
                 className="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary">
@@ -37,7 +46,7 @@ const Features = () => {
               <h4 className="mb-3 text-xl font-bold text-dark dark:text-white">
                 Free and Open-Source
               </h4>
-              <p className="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+              <p className="mb-8 text-secondary dark:text-dark-6 lg:mb-9">
                 Lorem Ipsum is simply dummy text of the printing and industry.
               </p>
               <a href="javascript:void(0)"
@@ -46,7 +55,9 @@ const Features = () => {
               </a>
             </div>
           </div>
-          <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div className="w-full px-4 md:w-1/2 lg:w-1/4"
+            data-aos='fade-up' data-aos-duration='700' data-aos-delay='800'
+          >
             <div className="wow fadeInUp group mb-12" data-wow-delay=".15s">
               <div
                 className="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary">
@@ -61,7 +72,7 @@ const Features = () => {
               <h4 className="mb-3 text-xl font-bold text-dark dark:text-white">
                 Multipurpose Template
               </h4>
-              <p className="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+              <p className="mb-8 text-secondary dark:text-dark-6 lg:mb-9">
                 Lorem Ipsum is simply dummy text of the printing and industry.
               </p>
               <a href="javascript:void(0)"
@@ -70,7 +81,9 @@ const Features = () => {
               </a>
             </div>
           </div>
-          <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div className="w-full px-4 md:w-1/2 lg:w-1/4"
+            data-aos='fade-up' data-aos-duration='700' data-aos-delay='800'
+          >
             <div className="wow fadeInUp group mb-12" data-wow-delay=".2s">
               <div
                 className="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary">
@@ -109,7 +122,7 @@ const Features = () => {
               <h4 className="mb-3 text-xl font-bold text-dark dark:text-white">
                 High-quality Design
               </h4>
-              <p className="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+              <p className="mb-8 text-secondary dark:text-dark-6 lg:mb-9">
                 Lorem Ipsum is simply dummy text of the printing and industry.
               </p>
               <a href="javascript:void(0)"
@@ -118,7 +131,9 @@ const Features = () => {
               </a>
             </div>
           </div>
-          <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div className="w-full px-4 md:w-1/2 lg:w-1/4"
+            data-aos='fade-up' data-aos-duration='700' data-aos-delay='800'
+          >
             <div className="wow fadeInUp group mb-12" data-wow-delay=".25s">
               <div
                 className="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary">
@@ -142,7 +157,7 @@ const Features = () => {
               <h4 className="mb-3 text-xl font-bold text-dark dark:text-white">
                 All Essential Elements
               </h4>
-              <p className="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+              <p className="mb-8 text-secondary dark:text-dark-6 lg:mb-9">
                 Lorem Ipsum is simply dummy text of the printing and industry.
               </p>
               <a href="javascript:void(0)"

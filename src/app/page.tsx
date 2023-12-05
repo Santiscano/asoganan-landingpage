@@ -9,6 +9,15 @@ import '@/styles/hero.css';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
+import AboutUs from '@/components/AboutUs';
+import CAT from '@/components/CAT';
+import Testimonial from '@/components/Testimonial';
+import FAQ from '@/components/FAQ';
+import Team from '@/components/Team';
+import Blog from '@/components/Blog';
+import Contact from '@/components/Contact';
+import Brands from '@/components/Brands';
+import Footer from '@/components/Footer';
 
 const listItems = [
   {name: "Inicio", href:"" },
@@ -36,46 +45,15 @@ export default function Home() {
         <Hero/>
       </div>
       <Features/>
-
-      
-      <p>este testo que ?</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-      <p>hola</p>
-
+      <AboutUs/>
+      <CAT/>
+      <Testimonial/>
+      <FAQ/>
+      <Team/>
+      <Blog/>
+      <Contact/>
+      <Brands/>
+      <Footer/>
     </>
   )
 }
