@@ -28,7 +28,7 @@ const AboutUs = () => {
                 applications with
                 interactive panel.
                 </p>
-                <a href="javascript:void(0)"
+                <a href="#"
                   className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-primary rounded-md px-7 bg-primary hover:bg-blue-dark hover:border-blue-dark">
                   Know More
                 </a>

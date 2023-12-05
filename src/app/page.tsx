@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from 'react';
+import Head from 'next/head';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -36,6 +37,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <link rel='icon' href="/Logo.png" type='image/png'/>
+      </Head>
       <div className='hero'>
         <Navbar
           src={Logo}

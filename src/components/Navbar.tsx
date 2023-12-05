@@ -72,17 +72,22 @@ const NavbarHorizontal: FC<Props> = ({
 }) => {
   
   // ===============MEDIA QUERIES 768PX==============//
-  const [isMobil, setIsMobil] = useState(window.innerWidth < 768);
+  const [isMobil, setIsMobil] = useState(
+    typeof window !== 'undefined' && window.innerWidth < 768
+  );
+  
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobil( window.innerWidth < 768 );
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setIsMobil( typeof window !== 'undefined' && window.innerWidth < 768 );
+      }
+  
+      window.addEventListener( 'resize', handleResize );
+  
+      return () => {
+        window.removeEventListener( 'resize', handleResize )
+      };
     }
-
-    window.addEventListener( 'resize', handleResize );
-
-    return () => {
-      window.removeEventListener( 'resize', handleResize )
-    };
   },[]);
   // ===============MEDIA QUERIES 768PX==============//
 
@@ -238,7 +243,7 @@ const NavbarHorizontal: FC<Props> = ({
           >
             {listItems.map(({name, href}, i) => (
               <li 
-                key={i}
+                key={name + i}
                 style={{
                   ...customStyle.navItem,
                   ...navItemAddStyles,

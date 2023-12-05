@@ -14,15 +14,15 @@ interface ListBlogs {
 const listBlogs: ListBlogs[] = [
   {
     image: blog1, date: "Dic 22, 2023", title: "Meet AutoManage, the best AI management tools", 
-    subtitle: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    subtitle: "Lorem Ipsum is simply dummy text of the printing and typesetting industry1."
   },
   {
     image: blog2, date: "Mar 15, 2023", title: "How to earn more money as a wellness coach", 
-    subtitle: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    subtitle: "Lorem Ipsum is simply dummy text of the printing and typesetting industry2."
   },
   {
     image: blog3, date: "Ene 05, 2023", title: "The no-fuss guide to upselling and cross selling",
-    subtitle: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    subtitle: "Lorem Ipsum is simply dummy text of the printing and typesetting industry3."
   },
 ]
 
@@ -52,7 +52,7 @@ const Blog = () => {
         <div className="flex flex-wrap -mx-4">
           {
             listBlogs.map(({image, date, title, subtitle}, i) => (
-              <div key={subtitle} className="w-full px-4 md:w-1/2 lg:w-1/3"
+              <div key={subtitle + i} className="w-full px-4 md:w-1/2 lg:w-1/3"
                 data-aos='fade-up'
               >
                 <div className="wow fadeInUp group mb-10" data-wow-delay=".1s">
@@ -68,7 +68,7 @@ const Blog = () => {
                       {date}
                     </span>
                     <h3>
-                      <a href="javascript:void(0)"
+                      <a href="#"
                         className="inline-block mb-4 text-xl font-semibold text-dark dark:text-white hover:text-primary dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
                       >
                         {title}

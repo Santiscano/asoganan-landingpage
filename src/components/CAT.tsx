@@ -21,7 +21,7 @@ const CAT = () => {
                   There are many variations of passages of Lorem Ipsum but the
                   majority have suffered in some form.
                 </p>
-                <a href="javascript:void(0)"
+                <a href="#"
                   className="inline-block py-3 text-base font-medium text-black transition border border-transparent rounded-md bg-white px-7 hover:bg-[#F9FAFB]"
                     data-aos='fade-down' data-aos-duration='600' data-aos-delay='300'
                   >

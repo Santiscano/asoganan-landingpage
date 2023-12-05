@@ -49,7 +49,7 @@ const Features = () => {
               <p className="mb-8 text-secondary dark:text-dark-6 lg:mb-9">
                 Lorem Ipsum is simply dummy text of the printing and industry.
               </p>
-              <a href="javascript:void(0)"
+              <a href="#"
                 className="text-base font-medium text-dark dark:text-white hover:text-primary dark:hover:text-primary">
                 Learn More
               </a>
@@ -75,7 +75,7 @@ const Features = () => {
               <p className="mb-8 text-secondary dark:text-dark-6 lg:mb-9">
                 Lorem Ipsum is simply dummy text of the printing and industry.
               </p>
-              <a href="javascript:void(0)"
+              <a href="#"
                 className="text-base font-medium text-dark dark:text-white hover:text-primary dark:hover:text-primary">
                 Learn More
               </a>
@@ -125,7 +125,7 @@ const Features = () => {
               <p className="mb-8 text-secondary dark:text-dark-6 lg:mb-9">
                 Lorem Ipsum is simply dummy text of the printing and industry.
               </p>
-              <a href="javascript:void(0)"
+              <a href="#"
                 className="text-base font-medium text-dark dark:text-white hover:text-primary dark:hover:text-primary">
                 Learn More
               </a>
@@ -160,7 +160,7 @@ const Features = () => {
               <p className="mb-8 text-secondary dark:text-dark-6 lg:mb-9">
                 Lorem Ipsum is simply dummy text of the printing and industry.
               </p>
-              <a href="javascript:void(0)"
+              <a href="#"
                 className="text-base font-medium text-dark dark:text-white hover:text-primary dark:hover:text-primary">
                 Learn More
               </a>

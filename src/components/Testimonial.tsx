@@ -51,18 +51,22 @@ const testimonials = [
 
 
 const Testimonial = () => {
-  const [isMobil, setIsMobil] = useState(window.innerWidth < 768);
+  const [isMobil, setIsMobil] = useState(
+    typeof window !== 'undefined' && window.innerWidth < 768
+  );
   
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobil( window.innerWidth < 768 );
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setIsMobil( typeof window !== 'undefined' && window.innerWidth < 768 );
+      }
+  
+      window.addEventListener( 'resize', handleResize );
+  
+      return () => {
+        window.removeEventListener( 'resize', handleResize )
+      };
     }
-
-    window.addEventListener( 'resize', handleResize );
-
-    return () => {
-      window.removeEventListener( 'resize', handleResize )
-    };
   },[]);
 
   return (
@@ -104,7 +108,7 @@ const Testimonial = () => {
             }}
           >
             {testimonials.map(({ message, image, name, role }, i) => (
-              <SwiperSlide key={message} >
+              <SwiperSlide key={message + i} >
                 <CardTestimonial
                   message={message}
                   image={image}
