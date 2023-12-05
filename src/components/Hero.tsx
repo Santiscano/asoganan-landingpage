@@ -30,7 +30,7 @@ const Hero = () => {
           </li>
           <li>
             <a href="https://github.com/tailgrids/play-tailwind" target="_blank"
-              className="flex items-center gap-4 py-[14px] rounded-md bg-white/[0.12] px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark">
+              className="flex items-center gap-4 py-[14px] rounded-md bg-white/[0.12] px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-black">
               <svg className="fill-current" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_2005_10818)">

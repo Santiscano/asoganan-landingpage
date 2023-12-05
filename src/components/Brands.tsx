@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
+import { useEffect, useState } from 'react'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -36,6 +36,20 @@ const imagesList = [
 ]
 
 const Brands = () => {
+  const [isMobil, setIsMobil] = useState(window.innerWidth < 768);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobil( window.innerWidth < 768 );
+    }
+
+    window.addEventListener( 'resize', handleResize );
+
+    return () => {
+      window.removeEventListener( 'resize', handleResize )
+    };
+  },[]);
+  
   return (
     <section id='brands' className="py-20 md:py-[120px] bg-gray-1 dark:bg-dark-2 overflow-hidden">
       <div className="container mx-auto">
@@ -65,8 +79,8 @@ const Brands = () => {
         <div className="-m-5">
           <Swiper
             modules={[Navigation]}
-            spaceBetween={50}
-            slidesPerView={3}
+            spaceBetween={isMobil ? 20 : 50}
+            slidesPerView={isMobil ? 1 : 3}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             navigation={{
