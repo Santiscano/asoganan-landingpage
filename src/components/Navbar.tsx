@@ -47,6 +47,7 @@ interface Props {
    * Additional styles for the navigation toggle button.
    */
   navToggleAddStyles?: CSSProperties;
+  isDark: boolean;
 }
 
 /**
@@ -66,7 +67,7 @@ interface Props {
  * @returns navbar
  */
 const NavbarHorizontal: FC<Props> = ({ 
-  src, alt, listItems,
+  src, alt, listItems, isDark,
   headerAddStyles, navAddStyles, navLogoAddStyles, navMenuAddStyles, navListAddStyles, 
   navItemAddStyles, navLinkAddStyles, navToggleAddStyles 
 }) => {
@@ -175,13 +176,14 @@ const NavbarHorizontal: FC<Props> = ({
       listStyle: "none",
       display: isMobil ? undefined : "flex",
       alignItems: "center",
-      gap: isMobil ? "" : "1.5rem",
+      gap: isMobil ? "" : "2rem",
     },
     navItem: { 
       marginBottom: isMobil ? "1rem" : undefined,
     },
     navLink: {
       color: isMobil ? "#707070" : !scroll ? "#FBFEFD" : "#707070",
+      fontSize: "1.1rem",
       fontWeight: "500",
       transition: ".3s",
       textDecoration: "none",
@@ -193,7 +195,8 @@ const NavbarHorizontal: FC<Props> = ({
       cursor: "pointer",
     },
     buttonAlt: {
-      display: isMobil ? "none" : "block",
+      display: isMobil ? "none" : "flex",
+      gap: '1rem'
     },
     button: { display: isMobil ? "block" : "none" },
     hover: {
@@ -266,7 +269,7 @@ const NavbarHorizontal: FC<Props> = ({
               ...customStyle.button
             }}>
               <button className={`px-4 py-2 text-white ${isMobil ? "bg-[#0e6a3a]" : scroll ? "bg-[#0e6a3a] " : " bg-gray-400 backdrop-filter backdrop-blur-sm bg-opacity-60 "} font-bold rounded-md bg-clip-padding `}>
-                Ingresar
+                Ingresa
               </button>
             </div>
           </ul>
@@ -286,9 +289,11 @@ const NavbarHorizontal: FC<Props> = ({
           </div>
         )}
 
-        <div style={{...customStyle.buttonAlt}}
-        >
-          <button className={`px-4 py-2 text-white ${scroll ? "bg-[#0e6a3a] " : " bg-gray-400 backdrop-filter backdrop-blur-sm bg-opacity-60 "} font-bold rounded-md bg-clip-padding `}>
+        <div style={{...customStyle.buttonAlt}} >
+          <button className={`px-6 py-[10px] text-white font-medium rounded-md bg-clip-padding transition duration-300 ease-in-out
+            ${scroll ? "bg-[#0e6a3a] " 
+            : " flex items-center gap-4 rounded-md bg-white/[0.12] text-base  hover:bg-white hover:text-black "
+            }`}>
             Ingresar
           </button>
         </div>

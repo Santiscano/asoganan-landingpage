@@ -9,10 +9,12 @@ import shape3 from '@/assets/footer/shape-3.svg';
 
 const Footer = () => {
   return (
-    <footer className="wow fadeInUp relative z-10 bg-primary pt-20 lg:pt-[100px]" data-wow-delay=".15s">
+    <footer className="relative z-10 bg-primary pt-20 lg:pt-[100px]">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
+          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12"
+            data-aos='fade-up' data-aos-duration='400'
+          >
             <div className="mb-10 w-full">
               <a href="#" className="mb-6 inline-block max-w-[160px]">
                 <Image src={logo} alt="logo" className="max-w-full" />
@@ -57,7 +59,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12"
+            data-aos='fade-up' data-aos-duration='500'
+          >
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">Acerca de Nosotros</h4>
               <ul>
@@ -84,7 +88,9 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
+          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12"
+            data-aos='fade-up' data-aos-duration='600' data-aos-delay='200'
+          >
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">Features</h4>
               <ul>
@@ -111,7 +117,9 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
+          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12"
+            data-aos='fade-up' data-aos-duration='700' data-aos-delay='300'
+          >
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
                 Our Products
@@ -140,7 +148,9 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
+          <div className="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12"
+            data-aos='fade-up' data-aos-duration='700' data-aos-delay='500'
+          >
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">Latest blog</h4>
               <div className="flex flex-col gap-8">
@@ -187,10 +197,10 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/3 lg:w-1/2">
               <div className="my-1 flex justify-center md:justify-end">
                 <p className="text-base text-gray-7">
-                  Designed and Developed by
+                  Diseñada y desarrollada
                   <a href="#" rel="nofollow noopner" target="_blank"
                     className="text-gray-1 hover:underline">
-                    TailGrids and UIdeck
+                    Santiago Sierra
                   </a>
                 </p>
               </div>

@@ -1,10 +1,14 @@
 "use client";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import '@/styles/hero.css';
+
+import Logo from '@/assets/Logo.png';
+
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
@@ -18,32 +22,34 @@ import Contact from '@/components/Contact';
 import Brands from '@/components/Brands';
 import Footer from '@/components/Footer';
 
-import Logo from '@/assets/Logo.png';
 
 const listItems = [
   {name: "Inicio", href:"" },
   {name: "Acerca de", href:"" },
-  {name: "precios", href:"" },
-  {name: "equipo", href:"" },
+  {name: "Precios", href:"" },
+  {name: "Equipo", href:"" },
   {name: "Blog", href:"" },
-  {name: "contactanos", href:"" },
+  {name: "Contactanos", href:"" },
 ]
 
 export default function Home() {
+  const [isDark, setisDark] = useState(true);
 
   useEffect(() => {
     AOS.init({ duration: 800, once: false })
   }, [])
 
   return (
-    <>
-      <div className='hero'>
+    <div className={isDark ? "dark" : ""}>
+      <div className='hero bg-primary'>
         <Navbar
           src={Logo}
           alt='logo asoganan'
           listItems={listItems}
+          isDark={isDark}
         />
         <Hero/>
+
       </div>
       <Features/>
       <AboutUs/>
@@ -55,6 +61,6 @@ export default function Home() {
       <Contact/>
       <Brands/>
       <Footer/>
-    </>
+    </div>
   )
 }
