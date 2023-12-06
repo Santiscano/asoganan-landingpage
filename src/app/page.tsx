@@ -1,11 +1,9 @@
 "use client";
 import { useEffect } from 'react';
-import Head from 'next/head';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Logo from '@/assets/Logo.png';
 import '@/styles/hero.css';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -19,6 +17,8 @@ import Blog from '@/components/Blog';
 import Contact from '@/components/Contact';
 import Brands from '@/components/Brands';
 import Footer from '@/components/Footer';
+
+import Logo from '@/assets/Logo.png';
 
 const listItems = [
   {name: "Inicio", href:"" },
@@ -37,9 +37,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <link rel='icon' href="/Logo.png" type='image/png'/>
-      </Head>
       <div className='hero'>
         <Navbar
           src={Logo}

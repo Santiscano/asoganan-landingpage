@@ -1,8 +1,7 @@
 import React from 'react';
-
 import Image, { StaticImageData } from 'next/image';
+
 import start from '@/assets/testimonials/icon-star.svg';
-import image from '@/assets/testimonials/author-01.jpg';
 
 const CardTestimonial = ({message, image, name, role }:{ message:string, image:StaticImageData, name:string, role: string }) => {
   return (

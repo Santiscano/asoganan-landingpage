@@ -1,9 +1,9 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 
-import mario from '@/assets/team/mario.png';
-import julian from '@/assets/team/julian.png';
 import estefany from '@/assets/team/estefany.png';
+import julian from '@/assets/team/julian.png';
+import mario from '@/assets/team/mario.png';
 import santi from '@/assets/team/santi.png';
 
 interface SocialLinks {

@@ -6,6 +6,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
 import CardTestimonial from './CardTestimonial';
+
 import user1 from '@/assets/testimonials/author-01.jpg';
 import user2 from '@/assets/testimonials/author-02.jpg';
 import user3 from '@/assets/testimonials/author-03.jpg';

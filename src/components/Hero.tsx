@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image';
+
 import Farmer from '@/assets/farm.jpg';
 
 const Hero = () => {
